@@ -1,7 +1,9 @@
 name = ZURB Foundation
-description = Drupal implementation of the Zurb Foundation 5 framework.
+description = additional fixes to the drupal foundation theme.
+
 core = 7.x
 engine = phptemplate
+base theme = zurb_foundation
 
 ; Image appears on admin/appearance
 screenshot = images/screenshot.jpg
