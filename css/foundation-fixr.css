@@ -1,0 +1,8 @@
+a.tabledrag-handle .handle{
+	height: 1.5rem;
+  width: 1.5rem;
+}
+
+table.field-ui-overview tr.add-new .label-input{
+  width: calc(100% - 1.5rem);
+}
