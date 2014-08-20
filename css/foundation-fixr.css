@@ -11,3 +11,11 @@ table.field-ui-overview tr.add-new .label-input{
 button, .button{
 	border-color:#007295;
 }
+
+[class*="block-grid-"]{
+	margin:0;
+}
+
+.row [class*="block-grid-"]{
+	margin: 0 -0.625rem;
+}
