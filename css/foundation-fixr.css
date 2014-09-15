@@ -19,3 +19,14 @@ button, .button{
 .row [class*="block-grid-"]{
 	margin: 0 -0.625rem;
 }
+
+/* Animated throbber */
+html.js input.form-autocomplete{
+  background-image: url(../images/throbber.gif);
+  background-position: 100% .75rem; /* LTR */
+  background-repeat: no-repeat;
+}
+
+html.js input.throbbing {
+  background-image: url(../images/throbber_rotated.gif);
+}
