@@ -3,7 +3,8 @@ a.tabledrag-handle .handle{
   width: 1.5rem;
 }
 
-table.field-ui-overview tr.add-new .label-input{
+.field-ui-overview tr.add-new .label-input,
+#webform-components .webform-add-form .form-item-add-name{
   width: calc(100% - 1.5rem);
 }
 
