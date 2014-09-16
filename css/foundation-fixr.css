@@ -6,6 +6,7 @@ a.tabledrag-handle .handle{
 .field-ui-overview tr.add-new .label-input,
 #webform-components .webform-add-form .form-item-add-name{
   width: calc(100% - 1.5rem);
+  float:left;
 }
 
 /* border:none; after border color causes .prefix, .postfix border color to inherit text color */
