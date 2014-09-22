@@ -15,4 +15,29 @@ function foundation_fixr_form_alter(&$form, &$form_state, $form_id) {
     $form['actions']['submit']['#attributes']['class'] = array('postfix', 'expand');
   }
   
+  // Sexy submit buttons fix
+  //reset form action buttons to secondary
+  if (!empty($form['actions'])) {
+    foreach($form['actions'] as &$action){
+      if(isset($action['#type']) && ($action['#type']=='submit')){
+        if(isset($action['#attributes']['class'])){
+          $action['#attributes']['class'][] = 'secondary';
+        }
+        else{
+          $action['#attributes']['class']=array();
+          $action['#attributes']['class'][]='secondary';
+        }
+      }
+    }
+  }
+
+  //remove secondary and radius class from submit action
+  if (!empty($form['actions']) && !empty($form['actions']['submit'])) {
+    $submit_classes=$form['actions']['submit']['#attributes']['class'];
+    $submit_classes=array_diff($submit_classes, array('secondary','radius'));
+    $form['actions']['submit']['#attributes']['class']=$submit_classes;
+  }
+
+
+  
 }
